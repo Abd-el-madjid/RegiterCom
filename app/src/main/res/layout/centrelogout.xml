@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+
+        <RelativeLayout
+            android:background="@drawable/logout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/choosetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/log_out"
+                android:textColor="@color/blackTextColor"
+                android:layout_marginTop="5dp"
+                android:textSize="28dp"
+                android:textStyle="bold"/>
+
+            <TextView
+
+                android:layout_below="@id/choosetxt"
+                android:id="@+id/logouttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/log_out_message"
+                android:textColor="@color/blackTextColor"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:textSize="18dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"/>
+
+            <!-- Validation Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logout"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logouttext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_button"
+                android:text="@string/log_out_button"
+                android:textColor="@color/whiteTextColor"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+</RelativeLayout>

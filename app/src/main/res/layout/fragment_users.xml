@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.Fragment.UsersFragment">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bar"
+    android:background="?android:attr/windowBackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="?android:attr/windowBackground">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/discutionname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/User_managment"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Enter user name or email"
+        android:hint="Enter user name or email"
+        android:iconifiedByDefault="false"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/searchview_backgound"
+        android:queryBackground="@android:color/transparent"
+        />
+
+    <RelativeLayout
+        android:layout_below="@id/searchView"
+        android:layout_marginTop="10dp"
+android:id="@+id/filtrage"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:layout_marginStart="5dp"
+            android:id="@+id/filtreimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:padding="5dp"
+            android:src="@drawable/outline_filter_alt_24" />
+
+        <Spinner
+            android:layout_toRightOf="@id/filtreimage"
+            android:id="@+id/spinner_filtre"
+            style="@style/GenderSpinnerStyle"
+            android:layout_width="wrap_content"
+
+            android:background="@color/transparent"
+            android:backgroundTint="@color/colorwhite"
+            android:hint="Gender"
+            android:paddingLeft="10dp"
+            android:paddingTop="14dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="14dp"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/filtrage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:id="@+id/recycler_view_users"/>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/no_user_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="22dp">
+
+        <!-- Welcome Message -->
+        <ImageView
+
+            android:layout_centerHorizontal="true"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:text="@string/hint_welcome_message"
+            android:padding="20dp"
+
+            android:textStyle="bold"
+            android:src="@drawable/no_connection"
+            android:id="@+id/welcomeMessage"
+            />
+
+        <!-- Ask, Resolve, Contact Text -->
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/askResolveContactText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_welcome_users"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@id/welcomeMessage"
+            android:layout_marginTop="8dp"
+            />
+
+
+        <!-- Button "Write a Message" -->
+    </RelativeLayout>
+
+
+</RelativeLayout>

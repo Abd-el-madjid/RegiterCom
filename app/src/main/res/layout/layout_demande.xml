@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/colorwhite">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin"
+        tools:ignore="MissingConstraints">
+
+        <!-- Existing code for headerTextPrimary and other TextInputLayouts -->
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="@string/demande"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <!-- Add TextInputLayout for Company Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/modifiedEditText"
+                android:id="@+id/companyName"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="@string/company_name"
+                android:contentDescription="Enter the company name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Add TextInputLayout for Address -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/modifiedEditText"
+                android:id="@+id/address"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="@string/company_address"
+                android:contentDescription="Enter the company address"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Add TextInputLayout for Phone Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/modifiedEditText"
+                android:id="@+id/phoneNumber"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:hint="@string/company_phone"
+                android:contentDescription="Enter the phone number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Add TextInputLayout for Email Address -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/modifiedEditText"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint="@string/company_email"
+                android:contentDescription="Enter the email address"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Add TextInputLayout for Business Activity -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <Spinner
+                android:background="@drawable/b_spinner_border"
+                style="@style/GenderSpinnerStyle"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:hint="Business Activity"
+                android:spinnerMode="dropdown"
+                android:id="@+id/businessActivitySpinner"
+                android:contentDescription="Select the type of business activity"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Add CheckBox for the declaration -->
+        <CheckBox
+            android:id="@+id/declarationCheckBox"
+            android:textColor="@color/colorHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/declaration_checkbox_text"
+            android:contentDescription="Check this box to confirm your declaration"/>
+
+        <!-- Existing code for the button and back_sign_in TextView -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backDemande1"
+                style="@style/loginButton"
+                android:layout_marginRight="40dp"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/previous_button_text"/>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="viewNextClickedDemand"
+                style="@style/loginButton"
+                android:id="@+id/NextDemande"
+                android:layout_marginLeft="40dp"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/next_button_text"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6CA7FF</color>
+    <color name="colorPrimaryDark">#03206C</color>
+    <color name="colorAccent">#00A5FF</color>
+    <color name="purple">#4410E1</color>
+    <color name="grey">#3D3D43</color>
+    <color name="darkgrey">#343435</color>
+    <color name="middlegrey">#202D3535</color>
+    <color name="lightgreay">#20BEBEBE</color>
+    <color name="whitetodarkgrey">#E2E2E2</color>
+
+    <color name="colorgreen">#2FFB00</color>
+    <color name="colorred">#FB0800</color>
+
+    <!--colors for modern ui fixe-->
+
+    <color name="whiteTextColorF">#FBFBFB</color>
+    <color name="blackTextColorF">#1C1C1C</color>
+
+    <color name="greyF">#3D3D43</color>
+    <color name="darkgreyF">#343435</color>
+    <color name="middlegreyF">#202D3535</color>
+    <color name="lightgreayF">#8B8B8B</color>
+
+
+    <!--colors for modern ui-->
+
+    <color name="whiteTextColor">#fff</color>
+    <color name="blackTextColor">#1C1C1C</color>
+    <color name="primaryTextColor">#00a5ff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="loginBkColorB">#1C1B1B</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+    <color name="blackCardColor">#272626</color>
+
+    <color name="listedcolor">#E43A3939</color>
+
+    <color name="colorHint">#6B6868</color>
+    <color name="colorBlack">#101010</color>
+    <color name="colorwhite">#F6F5F5</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="logo_bg_color"></color>
+</resources>

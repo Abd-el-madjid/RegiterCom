@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/loginCard"
+
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/colorwhite"
+    android:elevation="5dp"
+    app:cardCornerRadius="@dimen/loginCardRadius">
+
+    <LinearLayout
+
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin"
+        tools:ignore="MissingConstraints">
+
+        <!-- Existing code for headerTextPrimary and other TextInputLayouts -->
+        <TextView
+            style="@style/headerTextPrimary"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="@string/demande" />
+
+
+
+        <!-- First Name Section -->
+        <RelativeLayout
+            android:layout_below="@id/choosetxt"
+            android:id="@+id/layoutFirstname"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp">
+
+            <!-- Label for First Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_name_hint"
+                android:textColor="@color/blackTextColor"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/firstnametext"
+                android:textSize="16sp"/>
+
+            <!-- TextInputLayout for First Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+
+                android:background="@drawable/b_border"
+                android:layout_below="@id/firstnametext"
+
+                style="@style/parent">
+
+                <!-- TextInputEditText for First Name -->
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/modifiedEditText"
+                    android:id="@+id/firstname"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:text="@string/first_name_hint"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <!-- Last Name Section -->
+        <RelativeLayout
+            android:layout_below="@id/layoutFirstname"
+            android:id="@+id/layoutLastName"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp">
+
+            <!-- Label for Last Name -->
+            <TextView
+                android:textColor="@color/blackTextColor"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name_hint"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/lastnametext"
+                android:textSize="16sp"/>
+
+            <!-- TextInputLayout for Last Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_below="@id/lastnametext"
+                style="@style/parent"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+
+                android:background="@drawable/b_border"
+                >
+
+                <!-- TextInputEditText for Last Name -->
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/modifiedEditText"
+                    android:id="@+id/lastname"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:text="@string/last_name_hint"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <!-- Email Section -->
+        <RelativeLayout
+            android:layout_below="@id/layoutLastName"
+            android:id="@+id/layoutEmail"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp">
+
+            <!-- Label for Email -->
+            <TextView
+                android:textColor="@color/blackTextColor"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nationality_hint"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/emailtext"
+                android:textSize="16sp"/>
+
+            <!-- TextInputLayout for Email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_below="@id/emailtext"
+                style="@style/parent"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+
+                android:background="@drawable/b_border">
+
+                <!-- TextInputEditText for Email -->
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/modifiedEditText"
+                    android:id="@+id/nationality"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:text="@string/nationality_hint"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <!-- Phone Number Section -->
+        <RelativeLayout
+            android:layout_below="@id/layoutEmail"
+            android:id="@+id/layoutPhoneNumber"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp">
+
+            <!-- Label for Phone Number -->
+            <TextView
+                android:textColor="@color/blackTextColor"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_of_birth_hint"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/phonenumbertext"
+                android:textSize="16sp"/>
+
+            <!-- TextInputLayout for Phone Number -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_below="@id/phonenumbertext"
+                style="@style/parent"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+
+                android:background="@drawable/b_border">
+
+                <!-- TextInputEditText for Phone Number -->
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/modifiedEditText"
+                    android:id="@+id/date_birthday"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:hint="@string/date_of_birth_hint"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <!-- Add CheckBox for the declaration -->
+
+
+
+        <RelativeLayout
+            android:layout_below="@id/layoutPhoneNumber"
+            android:id="@+id/layoutNationalnumber"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp">
+
+            <!-- Label for Phone Number -->
+            <TextView
+                android:textColor="@color/blackTextColor"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/national_number_hint"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/nationalnumbertext"
+                android:textSize="16sp"/>
+
+            <!-- TextInputLayout for Phone Number -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_below="@id/nationalnumbertext"
+                style="@style/parent"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+
+                android:background="@drawable/b_border">
+
+                <!-- TextInputEditText for Phone Number -->
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/modifiedEditText"
+                    android:id="@+id/nationalnumber"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:hint="@string/national_number_hint"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/layoutPhoneNumber"
+            android:id="@+id/layoutcheckbox"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp">
+            <CheckBox
+                android:layout_marginStart="10dp"
+                android:id="@+id/declarationCheckBox1"
+                android:textColor="@color/colorHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/declaration_checkbox_text_info"
+                android:contentDescription="Check this box to confirm your declaration"/>
+            <!-- Existing code for the button and back_sign_in TextView -->
+
+
+        </RelativeLayout>
+        <!-- Existing code for the button and back_sign_in TextView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="viewNextClickedDemand1"
+                style="@style/loginButton"
+                android:id="@+id/NextDemande1"
+                android:layout_marginRight="40dp"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/next_button_text"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

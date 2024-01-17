@@ -1,0 +1,12 @@
+<!-- res/drawable/spinner_bottom_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="-2dp" android:left="-2dp" android:right="-2dp">
+        <shape>
+            <solid android:color="@color/colorwhite" />
+            <corners android:radius="4dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/colorBlack" />
+        </shape>
+    </item>
+</layer-list>

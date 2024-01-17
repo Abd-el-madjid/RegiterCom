@@ -1,0 +1,15 @@
+<!-- res/drawable/active_inactive_selector.xml -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Active state -->
+    <item  android:state_enabled="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/colorgreen" />
+            <!-- Set a fixed size for the dot -->
+            <size android:width="15dp" android:height="15dp" />
+        </shape>
+    </item>
+
+    <!-- Inactive state -->
+</selector>

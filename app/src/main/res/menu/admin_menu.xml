@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/outline_dashboard_24"
+        android:title=""/>
+
+
+
+
+       <item android:id="@+id/nav_chat"
+            android:icon="@drawable/outline_chat_bubble_outline_24"
+            android:title=""
+            />
+
+  <!--  <item android:id="@+id/nav_add_demand"
+        android:icon="@drawable/outline_add_circle_outline_24"
+        android:title=""/>-->
+
+
+
+
+    <!-- <item android:id="@+id/nav_ressources"
+          android:icon="@drawable/outline_help_outline_24_black"
+
+          android:title=""/>-->
+
+    <item android:id="@+id/nav_account"
+
+        android:icon="@drawable/outline_manage_accounts_24"
+
+        android:title=""/>
+</menu>

@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="180dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_height="3dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/choosetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/links"
+                android:textColor="@color/blackTextColor"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <!-- RelativeLayout for Button 1 -->
+            <RelativeLayout
+
+                android:id="@+id/Button1Layout"
+                android:layout_below="@id/choosetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/ThemedListItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Button1"
+                    android:textColor="@color/blackTextColor"
+android:text="@string/link1"
+                    android:textSize="12sp"
+                    android:gravity="start"
+                    />
+            </RelativeLayout>
+
+            <!-- RelativeLayout for Button 2 -->
+            <RelativeLayout
+                android:id="@+id/Button2Layout"
+                android:layout_below="@id/Button1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/ThemedListItem"
+                    android:id="@+id/Button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blackTextColor"
+                    android:text="@string/link2"
+                    android:textSize="12sp"
+                    android:gravity="start"
+                    />
+            </RelativeLayout>
+
+            <!-- RelativeLayout for Button 3 -->
+            <RelativeLayout
+                android:id="@+id/Button3Layout"
+                android:layout_below="@id/Button2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/ThemedListItem"
+                    android:id="@+id/Button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blackTextColor"
+                    android:text="@string/link3"
+                    android:textSize="12sp"
+                    android:gravity="start"
+                   />
+            </RelativeLayout>
+
+            <!-- Add more RelativeLayouts for additional buttons as needed -->
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- White circle background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/colorred" /> <!-- White color for the background -->
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+        </shape>
+    </item>
+
+    <!-- Red circle with transparent inside -->
+</layer-list>

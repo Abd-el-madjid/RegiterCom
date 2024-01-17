@@ -1,0 +1,67 @@
+<!-- res/layout/fragment_inbox.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.ResourceActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+
+        android:background="?android:attr/windowBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+
+                android:layout_centerVertical="true"
+                android:id="@+id/back_btn"/>
+
+            <TextView
+                android:id="@+id/discutionname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/Resource_and_assistance"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <!-- First instance of list_item_account.xml -->
+    <include layout="@layout/list_item_account"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/firstAccountItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Second instance of list_item_account.xml -->
+    <include layout="@layout/list_item_account"
+        android:id="@+id/secondAccountItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstAccountItem"
+        android:layout_marginTop="16dp"/>
+
+
+    <include layout="@layout/list_item_account"
+        android:layout_below="@id/secondAccountItem"
+        android:id="@+id/thirdAccountItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

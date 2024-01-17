@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/loginCard"
+
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/colorwhite"
+    android:elevation="5dp"
+    app:cardCornerRadius="@dimen/loginCardRadius">
+
+    <LinearLayout
+
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin"
+        tools:ignore="MissingConstraints">
+
+        <!-- Existing code for headerTextPrimary and other TextInputLayouts -->
+        <TextView
+            style="@style/headerTextPrimary"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="@string/demande" />
+
+        <!-- Add TextInputLayout for Nom de l'entreprise -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/b_border_bottom">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpload"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/upload"
+                android:contentDescription="Upload Location Request Document"
+                />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@id/btnUpload"
+    android:layout_alignParentStart="true"
+    android:layout_centerVertical="true"
+
+    >
+
+    <ImageButton
+        android:id="@+id/selectedFileNameCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+
+        android:layout_marginLeft="15dp"
+
+        android:layout_toRightOf="@+id/selectedFileName"
+        android:background="@drawable/outline_check_circle_outline_24"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/selectedFileName"
+        android:layout_width="160dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+
+        android:text="@string/hint_location_request"
+        android:textColor="@color/blackTextColorF"
+        />
+</RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- RelativeLayout for "Ownership contract or Lease contract" document -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/b_border_bottom">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOwnershipContractUpload"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/upload"
+                android:contentDescription="Upload Ownership or Lease Contract Document"
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnOwnershipContractUpload"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            >
+            <ImageButton
+                android:id="@+id/OwnershipContractCheck"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/selectedOwnershipContractFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/outline_check_circle_outline_24"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/selectedOwnershipContractFileName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/blackTextColorF"
+
+                android:text="@string/hint_ownership_contract"
+           />
+        </RelativeLayout>
+        </RelativeLayout>
+        <!-- RelativeLayout for "Articles of Association" document -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/b_border_bottom">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnArticlesOfAssociationUpload"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/upload"
+                android:contentDescription="Upload Company's Articles of Association Document"
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnArticlesOfAssociationUpload"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            >
+            <ImageButton
+                android:id="@+id/ArticlesOfAssociationCheck"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/selectedArticlesOfAssociationFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/outline_check_circle_outline_24"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/selectedArticlesOfAssociationFileName"
+                android:layout_width="165dp"  android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/blackTextColorF"
+
+                android:text="@string/hint_articles_of_association"
+            />
+        </RelativeLayout>
+        </RelativeLayout>
+        <!-- RelativeLayout for "Announcement Document" -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/b_border_bottom">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAnnouncementDocumentUpload"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/upload"
+                android:contentDescription="Upload Inclusion in Official Bulletin Document" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnAnnouncementDocumentUpload"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            >
+            <ImageButton
+                android:id="@+id/AnnouncementDocumentCheck"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/selectedAnnouncementDocumentFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/outline_check_circle_outline_24"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/selectedAnnouncementDocumentFileName"
+                android:layout_width="160dp"   android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/blackTextColorF"
+
+                android:text="@string/hint_announcement_document"
+                 />
+        </RelativeLayout>
+        </RelativeLayout>
+        <!-- RelativeLayout for "Birth Certificate" document -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/b_border_bottom">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBirthCertificateUpload"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/upload"
+                android:contentDescription="Upload Birth Certificate Document for Executives and Management"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btnBirthCertificateUpload"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+
+                >
+                <ImageButton
+                    android:id="@+id/BirthCertificateCheck"
+                    android:visibility="gone"
+
+                    android:layout_toRightOf="@+id/selectedBirthCertificateFileName"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/outline_check_circle_outline_24"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                android:id="@+id/selectedBirthCertificateFileName"
+                    android:layout_width="160dp"  android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                    android:textColor="@color/blackTextColorF"
+
+                    android:text="@string/hint_birth_certificate"
+               />
+        </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- RelativeLayout for "Criminal Record Extract" document -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/b_border_bottom">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCriminalRecordExtractUpload"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/upload"
+                android:contentDescription="Upload Criminal Record Document for Executives and Management"
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnCriminalRecordExtractUpload"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            >
+
+            <ImageButton
+                android:id="@+id/CriminalRecordExtractCheck"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/selectedCriminalRecordExtractFileName"
+
+                android:background="@drawable/outline_check_circle_outline_24"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/selectedCriminalRecordExtractFileName"
+                android:layout_width="160dp"  android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/blackTextColorF"
+
+                android:text="@string/hint_criminal_record_extract"
+       />
+        </RelativeLayout>
+        </RelativeLayout>
+        <!-- RelativeLayout for "Stamp Duty Payment Receipt" document -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/b_border_bottom">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnStampDutyReceiptUpload"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/upload"
+                android:contentDescription="Upload Stamp Duty Receipt Document"
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnStampDutyReceiptUpload"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            >
+            <ImageButton
+                android:id="@+id/StampDutyReceiptCheck"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/selectedStampDutyReceiptFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/outline_check_circle_outline_24"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/selectedStampDutyReceiptFileName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:text="@string/hint_stamp_duty_receipt"
+                android:textColor="@color/blackTextColorF"
+                />
+        </RelativeLayout>
+        </RelativeLayout>
+        <!-- RelativeLayout for "Registration Fees Payment Receipt" document -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/b_border_bottom">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRegistrationFeesReceiptUpload"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/upload"
+                android:contentDescription="Upload Registration Fees Receipt Document"
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnRegistrationFeesReceiptUpload"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            >
+            <ImageButton
+                android:id="@+id/RegistrationFeesReceiptCheck"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/selectedRegistrationFeesReceiptFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/outline_check_circle_outline_24"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/selectedRegistrationFeesReceiptFileName"
+                android:layout_width="160dp" android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:text="@string/hint_registration_fees_receipt"
+                android:textColor="@color/blackTextColorF"
+                />
+        </RelativeLayout>
+        </RelativeLayout>
+        <!-- RelativeLayout for "Authorization or license to practice the activity" document -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/b_border_bottom">
+
+            <!-- Button for uploading "Authorization or license" document -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAuthorizationUpload"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/upload"
+                android:contentDescription="Upload Authorization or License Document"
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnAuthorizationUpload"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            >
+            <ImageButton
+                android:id="@+id/AuthorizationCheck"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/selectedAuthorizationFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/outline_check_circle_outline_24"
+                android:layout_centerVertical="true"/>
+
+            <!-- TextView to display the selected file name for "Authorization or license" document -->
+            <TextView
+                android:id="@+id/selectedAuthorizationFileName"
+                android:layout_width="160dp"  android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:text="@string/hint_authorization_license"
+                android:textColor="@color/blackTextColorF"
+                />
+        </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- Existing code for the button and back_sign_in TextView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatButton
+android:id="@+id/backDemande"
+                 style="@style/loginButton"
+                android:layout_marginRight="40dp"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/previous_button_text"/>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/b_SubmitDemande"
+                style="@style/loginButton"
+                android:layout_marginLeft="40dp"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/submit"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

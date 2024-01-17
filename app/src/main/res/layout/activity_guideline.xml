@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lightgreay"
+
+    android:layout_height="match_parent"
+    tools:context=".Activites.FaqActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+
+            android:background="?android:attr/windowBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_back"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+
+                    android:layout_centerVertical="true"
+                    android:id="@+id/back_btn"/>
+
+
+                <TextView
+                    android:id="@+id/discutionname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/Application_Procedures"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/horbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar"
+        android:layout_marginTop="-1dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scrollbarStyle="insideOverlay">
+
+
+
+
+                <com.google.android.material.tabs.TabLayout
+                    app:tabMinWidth="0dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMode="scrollable"
+                    app:tabPaddingEnd="16dp"
+
+                    app:tabPaddingStart="16dp">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tabStep1"
+                       android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Step_1"
+                        android:paddingRight="10dp"/>
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tabStep2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Step_2"
+                        android:paddingRight="10dp"/>
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tabStep3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Step_3"
+                        android:paddingRight="10dp"/>
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tabStep4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Step_4"
+                        android:paddingRight="10dp"/>
+                    <!-- Add more TabItems for additional steps -->
+
+                </com.google.android.material.tabs.TabLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+  <RelativeLayout
+      android:layout_below="@id/horbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <LinearLayout
+
+          android:visibility="gone"
+          android:id="@+id/step4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_4_title"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:padding="8dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_4_body1"
+              android:paddingStart="8dp"
+              android:paddingEnd="8dp"
+              android:paddingTop="8dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_4_body2"
+              android:paddingStart="8dp"
+              android:paddingEnd="8dp"
+              android:paddingTop="8dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_4_body3"
+              android:paddingStart="8dp"
+              android:paddingEnd="8dp"
+              android:paddingTop="8dp"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:visibility="gone"
+          android:id="@+id/step3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <!-- Step 3: Processing Requests -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_3_title"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:padding="8dp"/>
+
+          <!-- The requests will be reviewed by the authentication service. -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_3_body1"
+              android:paddingStart="8dp"
+              android:paddingEnd="8dp"
+              android:paddingTop="8dp"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:visibility="gone"
+          android:id="@+id/step2"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <!-- Step 2: Submitting a Business Registration Request -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_2_title"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:padding="8dp"/>
+
+          <!-- The electronic file is mandatory for applying for authentication. -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_2_body1"
+              android:paddingStart="8dp"
+              android:paddingEnd="8dp"/>
+
+          <!-- The completion of forms should be done in the following order: -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_2_body2"
+              android:paddingStart="8dp"
+              android:paddingEnd="8dp"
+              android:paddingTop="8dp"/>
+
+          <!-- 1. Personal Information -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_2_body3"
+              android:paddingStart="16dp"
+              android:paddingTop="4dp"/>
+
+          <!-- 2. Submission of required documents -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_2_body4"
+              android:paddingStart="16dp"
+              android:paddingTop="4dp"/>
+
+          <!-- 3. Request submission -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_2_body5"
+              android:paddingStart="16dp"
+              android:paddingTop="4dp"/>
+
+          <!-- 4. Confirmation of the request -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_2_body6"
+              android:paddingStart="16dp"
+              android:paddingTop="4dp"/>
+
+          <!-- The applicant can track the progress of their file at any time through the dashboard. -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step_2_body7"
+              android:paddingStart="8dp"
+              android:paddingEnd="8dp"
+              android:paddingTop="8dp"/>
+      </LinearLayout>
+      <LinearLayout
+android:visibility="visible"
+          android:id="@+id/step1"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <!-- Step 1: Creating an Account -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/Step_1_title"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:padding="8dp"/>
+
+          <!-- For any operation to be performed on the application, the applicant must proceed with creating an account to obtain a username and password. -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/Step_1_body1"
+              android:paddingStart="8dp"
+              android:paddingEnd="8dp"
+              android:paddingTop="8dp"/>
+
+          <!-- Once you have filled out and validated the form, you will receive a confirmation email, and then you can log in to be automatically redirected to the dashboard to proceed to step 2. -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/Step_1_body2"
+              android:paddingStart="8dp"
+              android:paddingEnd="8dp"
+              android:paddingTop="8dp"/>
+      </LinearLayout>
+
+  </RelativeLayout>
+
+</RelativeLayout>

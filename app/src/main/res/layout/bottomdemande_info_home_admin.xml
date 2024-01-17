@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+    <!-- NestedScrollView to allow scrolling if the content is too large -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Linear layout to hold all UI elements -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Separator view -->
+            <View
+                android:layout_width="180dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_height="3dp"
+                android:background="@color/grey" />
+
+            <!-- TextView for the title -->
+
+            <!-- TextView for the title -->
+            <TextView
+                android:id="@+id/choosetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/request_detail"
+                android:textColor="@color/blackTextColor"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_below="@id/choosetxt"
+                android:id="@+id/layoutdatesoumition"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp">
+
+                <!-- Label for First Name -->
+                <TextView
+                    android:textColor="@color/lightgreayF"
+
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/request_date"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/demandetext"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blackTextColor"
+                    android:layout_toRightOf="@id/demandetext"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ffffffff"
+                    android:id="@+id/demandedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <!-- First Name Section -->
+            <RelativeLayout
+                android:layout_below="@id/layoutdatesoumition"
+                android:id="@+id/layoutFirstname"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp">
+
+                <!-- Label for First Name -->
+                <TextView
+                    android:textColor="@color/lightgreayF"
+
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_name"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/companynametext"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blackTextColor"
+                    android:layout_toRightOf="@id/companynametext"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ffffffff"
+                    android:id="@+id/companyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/layoutFirstname"
+                android:id="@+id/layoutaddress"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp">
+
+                <!-- Label for First Name -->
+                <TextView
+                    android:textColor="@color/lightgreayF"
+
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_address"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/companyaddresstext"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blackTextColor"
+                    android:layout_toRightOf="@id/companyaddresstext"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ffffffff"
+                    android:id="@+id/companyaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/layoutaddress"
+                android:id="@+id/layoutaphone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp">
+
+                <!-- Label for First Name -->
+                <TextView
+                    android:textColor="@color/lightgreayF"
+
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_phone"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/companyphonetext"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blackTextColor"
+                    android:layout_toRightOf="@id/companyphonetext"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ffffffff"
+                    android:id="@+id/companyphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/layoutaphone"
+                android:id="@+id/layoutemail"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp">
+
+                <!-- Label for First Name -->
+                <TextView
+                    android:textColor="@color/lightgreayF"
+
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_email"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/companyemailtext"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blackTextColor"
+                    android:layout_toRightOf="@id/companyemailtext"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ffffffff"
+                    android:id="@+id/companyemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/layoutemail"
+                android:id="@+id/layoutactivite"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp">
+
+                <!-- Label for First Name -->
+                <TextView
+                    android:textColor="@color/lightgreayF"
+
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_activity"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/companyactiviteltext"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blackTextColor"
+                    android:layout_toRightOf="@id/companyactiviteltext"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ffffffff"
+                    android:id="@+id/companyactivite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@id/layoutactivite"
+                android:id="@+id/layoutetat"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp">
+
+                <!-- Label for First Name -->
+                <TextView
+                    android:textColor="@color/lightgreayF"
+
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/request_status"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/etattext"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:layout_marginStart="16dp"
+                    android:layout_toRightOf="@id/etattext"
+
+                    android:id="@+id/etatimage"
+                    android:layout_width="112dp"
+                    android:layout_height="35dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/processing"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_below="@id/layoutetat"
+                android:id="@+id/layoutfiles"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/pdfRecyclerView"/>
+
+            </RelativeLayout>
+
+            <!-- Validation Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/validationbutton"
+                android:layout_width="215dp"
+                android:layout_height="46dp"
+                android:layout_below="@id/layoutfiles"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/whiteTextColor"
+                android:background="@drawable/bg_button"
+                android:text="sumbit" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/acceptebutton"
+                android:layout_width="215dp"
+                android:layout_height="46dp"
+                android:layout_below="@id/validationbutton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/whiteTextColor"
+                android:background="@drawable/bg_button"
+                android:text="sumbit" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/refusebutton"
+                android:layout_width="215dp"
+                android:layout_height="46dp"
+                android:layout_below="@id/acceptebutton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/whiteTextColor"
+                android:background="@drawable/bg_button"
+                android:text="sumbit" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

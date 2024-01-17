@@ -1,0 +1,89 @@
+<!-- res/layout/item_channel.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginTop="5dp"
+    style="@style/ThemedListItem">
+
+    <!-- Channel Name -->
+    <TextView
+        android:id="@+id/textChannelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dddddddddd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkgreyF"
+        />
+
+    <TextView
+        android:id="@+id/textChannellastsendeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:layout_toRightOf="@id/textChannelName"
+        android:layout_marginStart="8dp"
+        android:layout_alignBaseline="@id/textChannelName"
+        />
+    <!-- Channel Time -->
+    <TextView
+        android:id="@+id/textChannelTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ddddddddd"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/greyF"
+        android:layout_toLeftOf="@id/frameUnreadCount"
+        android:layout_marginStart="8dp"
+        android:layout_alignBaseline="@id/textChannelDescription"
+        />
+
+    <!-- Channel Description -->
+    <TextView
+        android:id="@+id/textChannelDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textChannelName"
+        android:layout_below="@id/textChannelName"
+        android:layout_toLeftOf="@id/frameUnreadCount"
+        android:text="@string/canaux_disncription"
+        android:textColor="@color/greyF"
+android:textAlignment="textStart"
+        android:textSize="14sp"
+
+        />
+
+    <!-- Unread Message Count -->
+    <FrameLayout
+        android:id="@+id/frameUnreadCount"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp">
+
+        <!-- Arrow Icon -->
+        <ImageView
+            android:id="@+id/imageUnreadCount"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/round_background"
+            android:src="@drawable/outline_keyboard_arrow_right_24"
+            android:padding="8dp"/>
+
+    </FrameLayout>
+</RelativeLayout>

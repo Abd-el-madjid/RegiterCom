@@ -1,0 +1,265 @@
+<resources>
+    <string name="app_name">RegistreCom</string>
+    <string name="Messages">Messages</string>
+    <string name="welcommessages">Welcome to your inbox!</string>
+    <string name="seconemessages">Ask questions, get your issues resolved, contact us.</string>
+    <string name="writemessages">Write a Message</string>
+
+    <string name="Direct_conversation">Direct conversation</string>
+    <string name="General">General</string>
+    <string name="Users">Users</string>
+    <string name="Buisnes_Registre">Business Registre</string>
+    <string name="FAQ">FAQ</string>
+    <string name="Reset_Password">Reset Password</string>
+    <string name="send_link">Send Link</string>
+
+
+    <string name="Application_Procedures">Application Procedures</string>
+    <string name="Step_1">Step 1</string>
+    <string name="Step_1_title">Step 1: Creating an Account</string>
+    <string name="Step_1_body1">For any operation to be performed on the application, the applicant must proceed with creating an account to obtain a username and password.</string>
+    <string name="Step_1_body2">Once you have filled out and validated the form, you will receive a confirmation email, and then you can log in to be automatically redirected to the dashboard to proceed to step 2.</string>
+    <string name="Step_2">Step 2</string>
+    <string name="step_2_title">Step 2: Submitting a Business Registration Request</string>
+    <string name="step_2_body1">The electronic file is mandatory for applying for authentication.</string>
+    <string name="step_2_body2">The completion of forms should be done in the following order:</string>
+    <string name="step_2_body3">1. Personal Information</string>
+    <string name="step_2_body4">2. Submission of required documents</string>
+    <string name="step_2_body5">3. Request submission</string>
+    <string name="step_2_body6">4. Confirmation of the request</string>
+    <string name="step_2_body7">The applicant can track the progress of their file at any time through the dashboard.</string>
+    <string name="Step_3">Step 3</string>
+    <string name="step_3_title">Step 3: Processing Requests</string>
+    <string name="step_3_body1">The requests will be reviewed by the authentication service.</string>
+    <string name="Step_4">Step 4</string>
+    <string name="step_4_title">Step 4: Processing Results</string>
+    <string name="step_4_body1">After processing the request, you will be notified by email and on the platform.</string>
+    <string name="step_4_body2">Once the request is accepted, the applicant is informed of the proposed appointment and the required documents.</string>
+    <string name="step_4_body3">The appointment document must be presented on the day of authentication.</string>
+
+    <string name="login">Login</string>
+    <string name="Forgot_Password">Forgot Password?</string>
+
+    <!-- Hints and Texts for Registration Screen -->
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="national_number_hint">National Number</string>
+    <string name="date_of_birth_hint">Date of Birth</string>
+    <string name="place_of_birth_hint">Place of Birth</string>
+    <string name="gender_hint">Gender</string>
+    <string name="next_button_text">Next</string>
+    <string name="back_to_login_hint">Back to Login</string>
+
+    <!-- Hints and Texts for Registration Screen -->
+    <string name="telephone_number_hint">Telephone Number</string>
+    <string name="nationality_hint">Nationality</string>
+    <string name="username_hint">User name</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="previous_button_text">Previous</string>
+    <string name="register_button_text">Register</string>
+
+    <string name="Notifications">Notifications</string>
+    <string name="clear_all_button">Clear All</string>
+    <string name="welcome_message">Welcome to your\nNotification center!</string>
+    <string name="activity_text">Get the latest activity about your account here</string>
+
+    <!-- ... (Remaining strings unchanged) ... -->
+
+    <string name="Resource_and_assistance">Resource and Assistance</string>
+    <string name="faq">FAQ</string>
+    <string name="faq_description">Get answers for your questions</string>
+    <string name="assistance">Assistance</string>
+    <string name="assistance_description">Discover how to use the app</string>
+    <string name="links">Links</string>
+    <string name="links_description">Check out useful links</string>
+
+    <string name="Support_Center">Support Center</string>
+    <string name="chat">Chat</string>
+    <string name="chat_description">Instant chat with RegistreCom</string>
+    <string name="helpline">Helpline</string>
+    <string name="helpline_description">Available 8/24 hours</string>
+
+    <!-- ... (Remaining strings unchanged) ... -->
+
+
+    <string name="request_detail">Request Detail</string>
+    <string name="request_date">Request Date</string>
+    <string name="request_status">Request Status</string>
+    <string name="company_name">Company Name</string>
+    <string name="company_address">Company Address</string>
+    <string name="company_phone">Company Phone Number</string>
+    <string name="company_email">Company Email</string>
+    <string name="company_activity">Company Activity</string>
+    <string name="submit">Submit</string>
+    <string name="Delet_Requeste">Delete Request</string>
+    <string name="Accept_Requeste">Accept Request</string>
+    <string name="refuse_Requeste">Refuse Request</string>
+
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="validation">Validation</string>
+
+    <!-- ... (Remaining strings unchanged) ... -->
+
+    <string name="link1">National Business Registry Center</string>
+    <string name="link2">Frequently Asked Questions | Ministry of Commerce Algeria</string>
+    <string name="link3">3 types of registration in the business registry</string>
+
+    <string name="display_and_brightness">Display and Brightness</string>
+    <string name="dark_mode">Dark</string>
+    <string name="light_mode">Light</string>
+
+    <string name="password_change">Password Change</string>
+    <string name="old_password_label">Old Password</string>
+    <string name="new_password_label">New Password</string>
+    <string name="validation_new_password_label">Validation New Password</string>
+    <string name="eye_toggle_description">Toggle Password Visibility</string>
+
+    <string name="profile">Profile</string>
+
+    <string name="canaux_disncription">End-to-End Conversation</string>
+    <string name="canaux_name">Question</string>
+
+    <!-- ... (Remaining strings unchanged) ... -->
+
+
+
+    <string name="log_out">Log Out</string>
+    <string name="log_out_message">Are you sure you want to log out? Keep in mind that you\'ll need to log in again to access your account. If you proceed, you will be securely logged out of the app</string>
+    <string name="log_out_button">Log out</string>
+
+    <string name="name_request">Name Request</string>
+    <string name="date_submission">Date Submission</string>
+
+    <!-- ... (Remaining strings unchanged) ... -->
+
+
+
+    <string name="hint_location_request">Location Request</string>
+    <string name="hint_location_request_upload">Upload Location Request Document</string>
+    <string name="hint_ownership_contract">Ownership Contract</string>
+    <string name="hint_ownership_contract_upload">Upload Ownership or Lease Contract Document</string>
+    <string name="hint_articles_of_association">Articles of Association</string>
+    <string name="hint_articles_of_association_upload">Upload Company\'s Articles of Association Document</string>
+    <string name="hint_announcement_document">Announcement Document</string>
+    <string name="hint_announcement_document_upload">Upload Inclusion in Official Bulletin Document</string>
+    <string name="hint_birth_certificate">Birth Certificate (Number 12)</string>
+    <string name="hint_birth_certificate_upload">Upload Birth Certificate Document for Executives and Management</string>
+    <string name="hint_criminal_record_extract">Criminal Record Extract</string>
+    <string name="hint_criminal_record_extract_upload">Upload Criminal Record Document for Executives and Management</string>
+    <string name="hint_stamp_duty_receipt">Stamp Duty Payment Receipt</string>
+    <string name="hint_stamp_duty_receipt_upload">Upload Stamp Duty Receipt Document</string>
+    <string name="hint_registration_fees_receipt">Registration Fees Receipt</string>
+    <string name="hint_registration_fees_receipt_upload">Upload Registration Fees Receipt Document</string>
+    <string name="hint_authorization_license">Authorization or License</string>
+    <string name="hint_authorization_license_upload">Upload Authorization or License Document</string>
+    <string name="declaration_checkbox_text">I declare that all provided information is accurate and complete.</string>
+    <string name="declaration_checkbox_text_info">I declare that all provided information is accurate and complete.</string>
+    <string name="hint_welcome_users">You don\'t have any users in your app</string>
+    <string name="hint_welcome_users_messages">You don\'t have any messages from users</string>
+
+    <!-- ... (Remaining strings unchanged) ... -->
+
+    <!-- Common Strings -->
+    <string name="hint_welcome_message">Welcome to RegistreCom!</string>
+    <string name="hint_no_requests">You don\'t have any requests yet. To get started, submit your first request.</string>
+    <string name="button_text_get_registre">Get your Registre</string>
+    <string name="hint_welcome">Welcome</string>
+    <string name="hint_your_request_in_one_click">Your Registre request in one click</string>
+    <string name="hint_requested_registers">Requested Registers</string>
+    <string name="Admin_side">Admin side</string>
+    <string name="hint_no_requests_admin">You don\'t have any requests yet to process</string>
+
+    <!-- ... (Remaining strings unchanged) ... -->
+
+
+    <!-- Common Strings -->
+    <string name="hint_account">Account</string>
+    <string name="hint_personal_information">Personal Information</string>
+    <string name="hint_password_manage">Password Management</string>
+    <string name="hint_tips">Tips</string>
+    <string name="hint_support_client">Client Support</string>
+    <string name="hint_resource_assistance">Resource and Assistance</string>
+    <string name="hint_additional">Additional</string>
+    <string name="hint_language">Language</string>
+    <string name="hint_mode_manager">Mode Manager</string>
+    <string name="hint_log_out">Log Out</string>
+
+    <string name="demande">Submit a Request</string>
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="confirm_password_hint">Confirmation Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+
+    <!-- ... (Remaining strings unchanged) ... -->
+
+
+
+    <string name="toggle_password_visibility">Toggle Password Visibility</string>
+
+    <string-array name="gender_options">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="Delet_user">Delet a User</string>    <!-- English strings -->
+    <string-array name="filter_options">
+        <item>All</item>
+        <item>En attente</item>
+        <item>accepte</item>
+        <item>refuse</item>
+    </string-array>
+    <string-array name="filter_options2">
+        <item>All</item>
+        <item>Active</item>
+        <item>Disactive</item>
+    </string-array>
+    <string-array name="business_activity_options">
+        <item>Business Activity</item>
+        <item>General Commerce</item>
+        <item>Restoration</item>
+        <item>Services</item>
+        <item>Building and Public Works (BTP)</item>
+        <item>Industry</item>
+        <item>Transport</item>
+        <item>Information Technology and Telecommunications</item>
+        <item>Health</item>
+        <item>Education</item>
+        <item>Tourism and Hospitality</item>
+        <!-- Add more as needed -->
+    </string-array>
+
+    <!-- Add more as needed -->
+    <string name="new_login">New Login</string>
+    <string name="notification_new_login">New login detected on your account. If this wasn\'t you, please secure your account and change your password immediately.</string>
+    <string name="notification_logout">You have been successfully logged out. If you did not initiate this action, please secure your account and change your password.</string>
+    <string name="notification_title_logout">Logout </string>
+    <string name="notification_update_password">Your password has been updated successfully. If you did not initiate this change, please secure your account and contact support.</string>
+    <string name="notification_title_update_password">Password Update </string>
+    <string name="notification_change_email">Your email address has been updated successfully. If you did not initiate this change, please secure your account and contact support.</string>
+    <string name="notification_title_change_email">Email Change </string>
+    <string name="notification_change_phone">Your phone number has been updated successfully. If you did not initiate this change, please secure your account and contact support.</string>
+    <string name="notification_title_change_phone">Phone Number Change </string>
+    <string name="notification_update_firstname">Your first name has been updated successfully. If you did not initiate this change, please secure your account and contact support.</string>
+    <string name="notification_title_update_firstname">First Name Update </string>
+    <string name="notification_update_lastname">Your last name has been updated successfully. If you did not initiate this change, please secure your account and contact support.</string>
+    <string name="notification_title_update_lastname">Last Name Update </string>
+    <string name="notification_submit_request">You have successfully submitted a request for a business registry under the name: %1$s.</string>
+    <string name="notification_title_submit_request">Request Submission </string>
+    <string name="notification_nationality_update">You have successfully updated your nationality to: %1$s.</string>
+    <string name="notification_title_nationality_update">Nationality Update</string>
+    <string name="notification_birthday_update">You have successfully updated your date of birth to: %1$s.</string>
+    <string name="notification_title_birthday_update">Date of Birth Update</string>
+    <!-- res/values/strings.xml -->
+
+    <string name="notification_title_account_deleted">Account Deleted</string>
+    <string name="notification_account_deleted">Your account has been deleted. If you have any questions, please contact support.</string>
+    <string name="notification_title_new_message_received">New Message Received</string>
+    <string name="notification_new_message_received">You have received a new message.</string>
+
+    <string name="User_managment">User Management</string>
+</resources>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+
+    style="@style/ThemedListItem">
+
+    <!-- TextView for Name Request -->
+    <TextView
+        android:id="@+id/nameRequestTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_request"
+    android:textSize="14sp"
+    android:textColor="@color/greyF" />
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_alignBaseline="@id/nameRequestTextView"
+
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/nameRequestTextView"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/whiteTextColorF" />
+
+    <!-- TextView for Time -->
+
+
+    <!-- TextView for Date Solution -->
+    <TextView
+
+        android:id="@+id/dateSolutionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameRequestTextView"
+        android:layout_marginTop="8dp"
+        android:text="@string/date_submission"
+    android:textSize="14sp"
+    android:textColor="@color/greyF"
+ />
+    <TextView
+        android:layout_marginStart="8dp"
+        android:layout_alignBaseline="@id/dateSolutionTextView"
+
+        android:id="@+id/TimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/dateSolutionTextView"
+        android:paddingLeft="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/whiteTextColorF"
+        />
+
+    <ImageView
+        android:id="@+id/etatImageView"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/processing"
+        />
+
+</RelativeLayout>
