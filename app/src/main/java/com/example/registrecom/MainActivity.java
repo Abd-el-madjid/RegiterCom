@@ -65,13 +65,7 @@ private ScrollView main ;
         startbglogo =  findViewById(R.id.startbglogo);
         auth = FirebaseAuth.getInstance();
 
-   /*     main.animate().alpha(0f).setDuration(10);
-        TranslateAnimation animation = new TranslateAnimation(0,0,0,-1500);
-        animation.setDuration(2000);
-        animation.setFillAfter(false);
-        animation.setAnimationListener(new MyAnimationListener());
-        startbglogo.setAnimation(animation);
-*/
+
          notificationRef = FirebaseDatabase.getInstance().getReference().child("Notification");
 
         if (auth.getCurrentUser() != null) {
@@ -213,25 +207,7 @@ private ScrollView main ;
     }
 
 
-private class  MyAnimationListener implements Animation.AnimationListener{
 
-    @Override
-    public void onAnimationStart(Animation animation) {
-
-    }
-
-    @Override
-    public void onAnimationEnd(Animation animation) {
-        startbglogo.clearAnimation();
-        startbglogo.setVisibility(View.INVISIBLE);
-        main.animate().alpha(1f).setDuration(1000);
-    }
-
-    @Override
-    public void onAnimationRepeat(Animation animation) {
-
-    }
-}
 
 
     private void login(String email, String password) {
@@ -342,41 +318,7 @@ private class  MyAnimationListener implements Animation.AnimationListener{
         finish();
     }
 
-    private void sendNotification(String title, String body) {
-        String chanelid = "CHANNEL_ID_NOTIFICATION";
-
-
-        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(getApplicationContext(), chanelid);
-        notificationBuilder.setContentTitle(title)
-                .setContentText(body)
-                .setSmallIcon(R.drawable.outline_circle_notifications_24)
-                .setAutoCancel(true)
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
-        Intent intent = new Intent(getApplicationContext() , NotificationActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.putExtra("data", "some value again");
-        PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, PendingIntent.FLAG_ONE_SHOT | PendingIntent.FLAG_IMMUTABLE);
-        notificationBuilder.setContentIntent(pendingIntent);
-
-        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            NotificationChannel notificationChannel = notificationManager.getNotificationChannel(chanelid);
-            if (notificationChannel == null ){
-                int importance = notificationManager.IMPORTANCE_HIGH;
-                notificationChannel = new NotificationChannel(chanelid,"some discription",importance);
-                notificationChannel.setLightColor(Color.BLUE);
-                notificationChannel.enableVibration(true);
-                notificationManager.createNotificationChannel(notificationChannel);
-            }
-        }
-
-
-        if (notificationManager != null) {
-            notificationManager.notify(0, notificationBuilder.build());
-        }
-    }
+   
     private void togglePasswordVisibility(EditText editText, boolean isVisible,ImageButton k) {
         if (editText == null) {
             // Log an error or handle it appropriately
